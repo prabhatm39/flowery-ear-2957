@@ -1,0 +1,45 @@
+.left_siderbar_form{
+    width: 18%;
+    border: 1px solid red;
+    height: 90vh;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.input_fild{
+    background-color:whitesmoke;
+    margin-top: 1rem;
+    height: 1.5rem;
+    width: 90%;
+    border: none;
+}
+.Fligth_book_radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+}
+.color{
+    color: 1px solid red;
+}
+.radio_class{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+.RequstCallbakc_button{
+    width: 95%;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.Details_Modal{
+    position: absolute;
+    top: 10;
+    width: 80%;
+    height: 15rem;
+}
