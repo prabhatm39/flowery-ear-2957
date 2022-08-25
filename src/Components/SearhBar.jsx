@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useState , useEffect } from 'react';
 import styles from "./SearchBar.module.css";
 
 
 
-const SearhBar = () => {
+const SearhBar = ({onChangeInput}) => {
+    const [inputText , setInputText] = useState("");
+    
+    const handleChange = (e) => {
+        // console.log(e);
+        setInputText(e.target.value);
+    };
+
+    useEffect(() => {
+        onChangeInput(inputText);
+    }, [inputText, onChangeInput])
+    // console.log(search);
     return (
-        // https://wallpaperaccess.com/full/3239746.jpg
-        <div className={styles.inputMain}>
+        <div  className={styles.inputMain}>
             <div className={styles.inputTop}>
                 Exclusive Tours & Holiday Packages
             </div>
             <div className={styles.inputDiv}>
-                <input className={styles.inputBox} type="search" placeholder='Search Packages For Destinations' ></input>
+                <input className={styles.inputBox} type="search" placeholder='Search Packages For Destinations' 
+                name='search' value={inputText} onChange={handleChange}
+                ></input>
             </div>
             <div className={styles.inputBelow}>
                 <div>Stays Activities</div>

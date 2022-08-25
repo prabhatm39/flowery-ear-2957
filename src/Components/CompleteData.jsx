@@ -1,18 +1,14 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux/es/exports';
-import { getPackageData } from '../Redux/action';
+import React from 'react';
 
-const CompleteData = () => {
-    const dispatch = useDispatch();
-    const packageData = useSelector((state) => state.AppReducer.data);
-    console.log("data:", packageData);
-
-    useEffect(() => {
-        dispatch(getPackageData());
-    }, []);
+const CompleteData = ({suggestions}) => {
+    console.log(suggestions);
     return (
         <div>
-
+        {
+            suggestions.map((item) => {
+                return <div>{item.descTitle}</div>
+            })
+        }
         </div>
     )
 }
