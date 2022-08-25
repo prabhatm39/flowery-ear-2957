@@ -1,7 +1,7 @@
 .left_siderbar_form{
     width: 18%;
     border: 1px solid red;
-    height: 90vh;
+    /* height: 90vh; */
     
 }
 .form{
@@ -42,4 +42,18 @@
     top: 10;
     width: 80%;
     height: 15rem;
+}
+
+.modal_class{
+    border: 1px solid rgb(126, 108, 108);
+    position: absolute;
+  left: 100px;
+  top: 150px;
+}
+.button{
+    /* color: red;
+    position: absolute; */
+    /* position: absolute;
+  left: 10px;
+  top: 15px; */
 }
