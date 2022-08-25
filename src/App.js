@@ -1,6 +1,4 @@
 import './App.css';
-import CompleteData from './Components/CompleteData';
-// import FetchData from './Components/FetchData';
 import Package from './Components/Package';
 import PackageBottom from './Components/PackageBottom';
 
