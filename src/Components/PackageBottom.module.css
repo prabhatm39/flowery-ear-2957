@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    cursor: pointer;
+
+}
+.bottomMain{
+    width: 86%;
+    /* border: 2px solid black; */
+    margin: 50px auto ;
+}
+.bottomTop{
+    margin: 10px 10px 15px 10px ;
+}
+.bottomMid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10px ;
+
+}
+.bottomMid > div {
+    /* border: 2px solid black; */
+    margin: auto;
+}
+.bottomMidImg{
+    width: 350px;
+    height: 200px;
+    border-radius: 7px;
+}
+.bottomBottom{
+    margin-top: 30px;
+}
+.bottomBottom > div {
+    margin-top: 30px;
+}
