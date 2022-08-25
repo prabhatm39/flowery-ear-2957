@@ -1,10 +1,11 @@
+import logo from './logo.svg';
 import './App.css';
-import HomePageDetails from './Pankaj_Components/AllMainDeatilsPage/HomePageDetails';
+import { Home } from './Components/Home';
 
 function App() {
   return (
     <div className="App">
-      <HomePageDetails />
+    <Home />
     </div>
   );
 }
