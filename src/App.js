@@ -1,10 +1,19 @@
+import logo from './logo.svg';
 import './App.css';
-import HomePageDetails from './Pankaj_Components/AllMainDeatilsPage/HomePageDetails';
+import Login from "./components/Login&Signup/Login"
+import SignUp from "./components/Login&Signup/SignUp"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import Mainrouting from './components/Mainrouting';
 
 function App() {
   return (
     <div className="App">
-      <HomePageDetails />
+      <Mainrouting/>
+     {/* <Login/> */}
+     {/* <SignUp/> */}
+     {/* <Navbar/> */}
+     {/* <Footer/> */}
     </div>
   );
 }
