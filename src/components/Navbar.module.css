@@ -17,11 +17,14 @@
     font-family: sans-serif;
     color: rgb(51,51,51);
     line-height:"20px";
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
   .dropList{
     line-height: 30px;
     font-weight:bold;
     font-size: 14 px;
+
   }
   .dropdown:hover .dropdownC {
     display: block;
