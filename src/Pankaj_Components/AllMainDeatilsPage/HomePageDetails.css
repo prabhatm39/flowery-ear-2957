@@ -1,5 +1,5 @@
 .left_siderbar_form{
-    width: 18%;
+    width: 100%;
     border: 1px solid red;
     /* height: 90vh; */
     
@@ -56,4 +56,34 @@
     /* position: absolute;
   left: 10px;
   top: 15px; */
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+.main_DetailsPage{
+    width: 1100px;
+    margin: auto;
+    border: 1px solid black;
+     display: flex; 
+    justify-content: center;
+    align-content: center;     
+}
+.details_left{
+    width: 75%;
+}
+.details_right{
+    width: 22%;
+}
+.flexClass{
+    display: flex;
+    flex-direction: row;
+}
+.textP{
+    font-size: 14px;
+}
+
+.articleText{
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.8rem;
 }
