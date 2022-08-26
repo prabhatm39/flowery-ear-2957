@@ -75,8 +75,10 @@ const DetailsRigthSide = () => {
             </div>
 
             <div className="RequstCallbakc_button">
-                <Button className="RequstCallbakc_button" onClick={handleRequestCallback}>Request Callback</Button>
-                <div><DetailsPageModal /></div>         
+                {/* <Button className="RequstCallbakc_button" onClick={handleRequestCallback}> */}
+                     <DetailsPageModal />
+                {/* </Button> */}
+                {/* <div><DetailsPageModal /></div>          */}
                 <p style={{fontSize:'10px'}}>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
             </div>
       </FormControl>
