@@ -23,7 +23,7 @@
         {
             "id": 2,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg",
-            "location": "Himachal Pradesh",
+            "location": "Himachal",
             "days": "3D - 2N",
             "price": "8,300",
             "person": "person",
@@ -317,7 +317,7 @@
         {
             "id": 20,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg",
-            "location": "Himachal Pradesh",
+            "location": "Himachal",
             "days": "3D - 2N",
             "price": "8,300",
             "person": "person",
@@ -397,7 +397,7 @@
 
     "mindful" : [
         {
-            "id": 1,
+            "id": 26,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg",
             "location": "Aurovile",
             "days": "3D - 2N",
@@ -417,9 +417,9 @@
             "highlights": ["Meals" , "Daily Breakfast" , "Sightseeing" , "Homestay" ,"Safe to Travel" , "Hill Station" , "Nature" , "Wellness" , "Hidden Gem"]
         },
         {
-            "id": 2,
+            "id": 27,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg",
-            "location": "Himachal Pradesh",
+            "location": "Himachal",
             "days": "3D - 2N",
             "price": "8,300",
             "person": "person",
@@ -437,7 +437,7 @@
             "highlights": ["Meals" , "Daily Breakfast" , "Sightseeing" , "Homestay" ,"Safe to Travel" , "Hill Station" , "Nature" , "Wellness" , "Hidden Gem"]
         },
         {
-            "id": 3,
+            "id": 28,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1638778652_image_cover_b.jpg",
             "location": "Rajasthan",
             "days": "2D - 1N",
@@ -457,7 +457,7 @@
             "highlights": ["Meals" , "Daily Breakfast" , "Sightseeing" , "Homestay" ,"Safe to Travel" , "Hill Station" , "Nature" , "Wellness" , "Hidden Gem"]
         },
         {
-            "id": 4,
+            "id": 29,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg",
             "location": "Manali",
             "days": "3D - 2N",
@@ -477,7 +477,7 @@
         },
         {
           
-            "id": 5,
+            "id": 30,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1640323403_image_cover_b.jpg",
             "location": "Rishikesh",
             "days": "3D - 2N",
@@ -496,7 +496,7 @@
             "rating": "5"  
         },
         {
-            "id": 6,
+            "id": 31,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645595596_image_cover_b_2.jpg",
             "location": "Ramnagar",
             "days": "3D - 2N",
@@ -519,7 +519,7 @@
     "domestic": [
         {
            
-            "id": 1,
+            "id": 32,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653394847_nw_c2.jpg",
             "location": "Nainital",
             "days": "3D - 2N",
@@ -540,7 +540,7 @@
         {
             
 
-            "id": 2,
+            "id": 33,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657204838_omya_img_cover_b.jpg",
             "location": "Bir",
             "days": "3D - 2N",
@@ -561,7 +561,7 @@
         {
             
 
-            "id": 3,
+            "id": 34,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1658477591_leh5_1.jpg",
             "location": "Kargil",
             "days": "11D - 10N",
@@ -576,7 +576,7 @@
         {
             
 
-            "id": 4,
+            "id": 35,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657379688_leh5.jpg",
             "location": "Leh",
             "days": "7D - 6N",
@@ -591,7 +591,7 @@
         {
             
 
-            "id": 5,
+            "id": 36,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657264673_leh2.jpg",
             "location": "Sahara Kashmir Road",
             "days": "8D - 7N",
@@ -606,7 +606,7 @@
         {
             
 
-            "id": 6,
+            "id": 37,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654149620_leh1.jpg",
             "location": "Leh ladakh",
             "days": "6D - 5N",
@@ -621,7 +621,7 @@
         {
             
 
-            "id": 7,
+            "id": 38,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1633083320_k5.jpg",
             "location": "Srinagar",
             "days": "5D - 4N",
@@ -636,7 +636,7 @@
         {
             
 
-            "id": 8,
+            "id": 39,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1658909266_k1_3.jpg",
             "location": "Thekkady",
             "days": "6D - 5N",
@@ -649,7 +649,7 @@
             "rating": "5"
         },
         {
-            "id": 9,
+            "id": 40,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645681828_k1_1.jpg",
             "location": "Kerala",
             "days": "7D - 6N",
@@ -662,7 +662,7 @@
             "rating": "4.7"
         },
         {
-            "id": 10,
+            "id": 41,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1658477866_k1_1.jpg",
             "location": "Munnar",
             "days": "6D - 5N",
@@ -675,7 +675,7 @@
             "rating": "4.4"
         },
         {
-            "id": 11,
+            "id": 42,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657265394_8_6.jpg",
             "location": "Mysuru",
             "days": "9D - 8N",
@@ -691,7 +691,7 @@
     
     "international" : [
         {
-            "id": 1,
+            "id": 43,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654840998_k2_4.jpg",
             "location": "Kochi",
             "days": "6D - 5N",
@@ -704,7 +704,7 @@
             "rating": "5"
         },
         {
-            "id": 2,
+            "id": 44,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654795199_si_05.jpg",
             "location": "Bengaluru",
             "days": "7D - 6N",
@@ -717,9 +717,9 @@
             "rating": "5"
         },
         {
-            "id": 3,
+            "id": 45,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg",
-            "location": "Himachal Pradesh",
+            "location": "Himachal",
             "days": "3D - 2N",
             "price": "8,300",
             "person": "person",
@@ -731,7 +731,7 @@
             "rating": "5"
         },
         {
-            "id": 4,
+            "id": 46,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657693521_m1.jpg",
             "location": "Maldives",
             "days": "4D - 3N",
@@ -744,7 +744,7 @@
             "rating": "5"
         },
         {
-            "id": 5,
+            "id": 47,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1658996455_9_10.jpg",
             "location": "Singapore",
             "days": "4D - 3N",
@@ -757,7 +757,7 @@
             "rating": "4.6"
         },
         {
-            "id": 6,
+            "id": 48,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653025176_9_8.jpg",
             "location": "",
             "days": "5D - 4N",
@@ -770,7 +770,7 @@
             "rating": "5"
         },
         {
-            "id": 7,
+            "id": 49,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657693753_dubai.jpg",
             "location": "Dubai",
             "days": "5D - 4N",
@@ -783,7 +783,7 @@
             "rating": "5"
         },
         {
-            "id": 8,
+            "id": 50,
             "banner": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1658997104_mauritius_c.jpg",
             "location": "Mauritius",
             "days": "5D - 4N",

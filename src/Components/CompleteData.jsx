@@ -1,15 +1,40 @@
 import React from 'react';
+import styles from "./FetchData.module.css";
 
 const CompleteData = ({suggestions}) => {
     console.log(suggestions);
     return (
-        <div>
-        {
-            suggestions.map((item) => {
-                return <div>{item.descTitle}</div>
-            })
-        }
-        </div>
+        <div className={styles.fetchMain} >
+               
+                <div className={styles.fetchTop}>
+                    {
+                        suggestions.map((item) => {
+                            return <div className={styles.fetchTopRe}>
+                            <h2 className={styles.heading}>{item.location} Packages</h2>
+                                <div>
+                                    <img className={styles.fetchImage} src={item.banner} />
+                                </div>
+                                <p className={styles.packa}>PACKAGE</p>
+                                <h3>{item.descTitle}</h3>
+                                <div className={styles.location}>
+                                    <div className={styles.locationLeft}>{item.location}</div>
+                                    <div className={styles.locationRight}>{item.days}</div>
+                                </div>
+                                <div className={styles.price}>
+                                    <div style={{ display: "flex" }}>
+                                        <div><h3>{item.price}</h3></div>
+                                        <div><p>/{item.person}</p></div>
+                                    </div>
+                                    <div className={styles.buttonDiv}>
+                                        <button className={styles.buttonMain}>Book Now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        })
+                    }
+                </div>
+                </div>
     )
 }
 
