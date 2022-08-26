@@ -1,8 +1,10 @@
 import React from 'react'
 import { Box, Image, Button, Stack, Input,Text } from "@chakra-ui/react";
 import styles from "./Navbar.module.css"
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <Box backgroundColor="rgb(47,155,219)"  display="flex">
     <Box
@@ -80,7 +82,7 @@ const Navbar = () => {
         
         </div>
         </div>
-        <Text paddingLeft="27px"><b>Sign In</b></Text>
+        <Text onClick={()=> navigate("/auth/login")} paddingLeft="27px"><b>Sign In</b></Text>
 
       </Stack>
 </Box>
