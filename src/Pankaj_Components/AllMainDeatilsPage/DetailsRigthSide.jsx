@@ -29,12 +29,12 @@ const DetailsRigthSide = () => {
         dCity,
         budget
       }
-      setForm[payload];
+      // setForm[payload];
       // console.log(payload);
     }
     console.log(form);
   return (
-    <div> 
+    <div style={{marginTop:'1rem'}}> 
       <div className="left_siderbar_form">
       <h3>Want to book a similar trip?</h3>
       <FormControl className="form" >
