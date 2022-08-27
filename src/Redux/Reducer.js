@@ -1,84 +1,134 @@
-import { LOGIN_FAILURE, LOGIN_LOADING, LOGIN_SUCCESS, LOGOUT_SUCCESS, PROFILE_FAILURE, PROFILE_LOADING, PROFILE_SUCCESS, REGISTER_FAILURE, REGISTER_LOADING, REGISTER_SUCCESS } from "./ActionType"
-
-let token=localStorage.getItem("token")
-
-const initialState={
-    isAuth: false ,
-    token:token || "",
-    isLoading:false,
-    isError:false,
-}
+import * as types from "./actionType";
 
 
-export const reducer=(state=initialState,action)=>{
-  const {type,payload}=action
-  switch(type){
-    case REGISTER_LOADING:{
-      return {
-        ...state,
-        isLoading:true,
-        isError:false
-      }
+const initialState = {
+    data: [],
+    mind: [],
+    domestic: [],
+    international: [],
+    singleData: {},
+    isLoading: false,
+    isError: false,
+};
+const reducer = (state = initialState, action) => {
+    const { type, payload } = action;
+    // console.log(payload);
+    switch (type) {
+        case types.REQUEST_PACKAGE_DATA:
+            return {
+                ...state,
+                isLoading: true,
+                isError: false,
+            };
+
+        case types.SUCCESS_PACKAGE_DATA:
+            return {
+                ...state,
+                data: payload,
+                isLoading: true,
+                isError: false,
+            };
+
+        case types.FAILURE_PACKAGE_DATA:
+            return {
+                ...state,
+                data: payload,
+                isLoading: true,
+                isError: false,
+            };
+
+        case types.REQUEST_PACKAGE_DATA_MIND:
+            return {
+                ...state,
+                isLoading: true,
+                isError: false
+            };
+
+        case types.SUCCESS_PACKAGE_DATA_MIND:
+            return {
+                ...state,
+                mind: payload,
+                isLoading: false,
+                isError: false,
+            };
+
+        case types.FAILURE_PACKAGE_DATA_MIND:
+            return {
+                ...state,
+                isLoading: false,
+                isError: true,
+            };
+
+        case types.REQUEST_PACKAGE_DATA_DOMESTIC:
+            return {
+                ...state,
+                isLoading: true,
+                isError: false,
+            };
+
+        case types.SUCCESS_PACKAGE_DATA_DOMESTIC:
+            return {
+                ...state,
+                domestic: payload,
+                isError: false,
+                isLoading: false,
+            }
+
+        case types.FAILURE_PACKAGE_DATA_DOMESTIC:
+            return {
+                ...state,
+                isLoading: false,
+                isError: true,
+            }
+
+        case types.REQUEST_PACKAGE_DATA_INTERNATIONAL:
+            return {
+                ...state,
+                isLoading: true,
+                isError: false,
+            };
+
+        case types.SUCCESS_PACKAGE_DATA_INTERNATIONAL:
+            return {
+                ...state,
+                international: payload,
+                isError: false,
+                isLoading: false,
+            }
+
+        case types.FAILURE_PACKAGE_DATA_INTERNATIONAL:
+            return {
+                ...state,
+                isLoading: false,
+                isError: true,
+            }
+
+        case types.ERROR_SINGLE_PACKAGE_DATA: 
+        return{
+            ...state,
+            isLoading: true,
+            isError: false,
+        }
+
+        case types.SUCCESS_SINGLE_PACKAGE_DATA:
+            return{
+                ...state,
+                singleData: payload,
+                isLoading: false,
+                isError: false,
+            }
+
+        case types.ERROR_SINGLE_PACKAGE_DATA: 
+            return{
+                ...state,
+                isLoading: false,
+                isError: true,
+            }
+
+        default: {
+            return state;
+        }
     }
-    case REGISTER_SUCCESS:{
-      
-      return {
-        ...state,
-        isLoading:false,
-        isError:false,
-        isAuth: true,
-      }
-    }
-    case REGISTER_FAILURE:{
-      return {
-        ...state,
-        isLoading:false,
-        isError:true,
-        isAuth:true,
-      }
-    }
+};
 
-
-
-    case LOGIN_LOADING:{
-      return {
-        ...state,
-        isLoading:true,
-        isError:false
-      }
-    }
-    case LOGIN_SUCCESS:{
-      localStorage.setItem("token",payload)
-      return {
-        ...state,
-        isLoading:false,
-        isError:false,
-        token:payload,
-        isAuth:true
-      }
-    }
-    case LOGIN_FAILURE:{
-      return {
-        ...state,
-        isLoading:false,
-        isError:true,
-        isAuth:true,
-        token:""
-      }
-    }
-
-    case LOGOUT_SUCCESS:{
-      return {
-       isAuth:true
-      }
-    }
-
-
-
-    
-
-    default:{
-        return state
-    }
-  }
-}
+export { reducer };

@@ -1,38 +1,65 @@
-import { LOGIN_FAILURE, LOGIN_LOADING, LOGIN_SUCCESS, LOGOUT_SUCCESS, PROFILE_FAILURE, PROFILE_LOADING, PROFILE_SUCCESS, REGISTER_FAILURE, REGISTER_LOADING, REGISTER_SUCCESS } from "./ActionType"
-import axios from "axios"
+import * as types from "./actionType";
+import axios from "axios";
 
-export const register=(payload)=>(dispatch)=>{
-    dispatch({type:REGISTER_LOADING})
-  console.log(payload)
-   return axios.post(`https://masai-api-mocker.herokuapp.com/auth/register`,payload).then((r)=>{
-        dispatch({type:REGISTER_SUCCESS,payload:r.data});
-        console.log("Reg Success")
-        return REGISTER_SUCCESS
+const getPackageData = () => (dispatch) => {
+     dispatch({type : types.REQUEST_PACKAGE_DATA});
+     return axios
+    .get("http://localhost:8080/user")  
+    .then((r) => {
+        // console.log(r.data);
+        dispatch({type : types.SUCCESS_PACKAGE_DATA, payload: r.data});
     })
-    .catch((e)=>{
-        dispatch({type:REGISTER_FAILURE,payload:e});
-        return REGISTER_FAILURE
+    .catch((e) => {
+        dispatch({type: types.FAILURE_PACKAGE_DATA});
+    })
+};
+
+const getMindData = () => (dispatch) => {
+    dispatch({type: types.REQUEST_PACKAGE_DATA_MIND});
+    return axios
+    .get("http://localhost:8080/mindful")
+    .then((r) => {
+        dispatch({type: types.SUCCESS_PACKAGE_DATA_MIND, payload:r.data});
+    })
+    .catch((e) => {
+        dispatch({type: types.FAILURE_PACKAGE_DATA_MIND});
+    });
+};
+
+const getDomesticData = () => (dispatch) => {
+    dispatch({type: types.REQUEST_PACKAGE_DATA_DOMESTIC});
+    return axios
+    .get("http://localhost:8080/domestic")
+    .then((r) => {
+        dispatch({type: types.SUCCESS_PACKAGE_DATA_DOMESTIC, payload:r.data});
+    })
+    .catch((e) => {
+        dispatch({type: types.FAILURE_PACKAGE_DATA_DOMESTIC})
+    });
+};
+
+const getInternationalData = () => (dispatch) => {
+    dispatch({type: types.REQUEST_PACKAGE_DATA_INTERNATIONAL});
+    return axios
+    .get("http://localhost:8080/international")
+    .then((r) => {
+        dispatch({type: types.SUCCESS_PACKAGE_DATA_INTERNATIONAL, payload:r.data})
+    })
+    .catch((e) => {
+        dispatch({type: types.FAILURE_PACKAGE_DATA_INTERNATIONAL});
+    });
+}
+
+const getSinglePackageData = (id) => (dispatch) => {
+    dispatch({type: types.GET_SINGLE_PACKAGE_DATA});
+    return axios
+    .get(`${"http://localhost:8080/user"}/${id}`)
+    .then((r) => {
+        dispatch({type: types.SUCCESS_SINGLE_PACKAGE_DATA, payload: r.data});
+    })
+    .catch((e) => {
+        dispatch({type: types.ERROR_SINGLE_PACKAGE_DATA});
     })
 }
 
-
-export const login=(payload)=>(dispatch)=>{
-    dispatch({type:LOGIN_LOADING})
-
-    return axios.post(`https://masai-api-mocker.herokuapp.com/auth/login`,payload).then((r)=>{
-        dispatch({type:LOGIN_SUCCESS,payload:r.data.token});
-        console.log(r.data)
-        return LOGIN_SUCCESS
-    })
-    .catch((e)=>{
-        dispatch({type:LOGIN_FAILURE,payload:e})
-        return LOGIN_FAILURE
-    })
-}
-
-
-export const logout=()=>(dispatch)=>{
-      return dispatch({type:LOGOUT_SUCCESS})
-}
-
-
+export {getPackageData , getMindData , getDomesticData, getInternationalData , getSinglePackageData};
