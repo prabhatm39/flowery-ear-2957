@@ -1,0 +1,37 @@
+.PackageDetailsBottom{
+    margin: 20px;
+}
+.PackageDetailsBottomh2{
+    font-size: 23px;
+    margin-bottom: 14px;
+}
+.PackageDetailsBottomTop{
+    font-size: 16px;
+    color: black;
+}
+.PackageDetailsBottomTop > p{
+    margin-bottom: 10px;
+}
+.PackageDetailsMiddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion{
+    width: 80%;
+    text-align: center;
+}
+.item{
+    background: white;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+.title{
+    color: #85662b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    color: #8b7f75;
+}
