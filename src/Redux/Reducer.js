@@ -3,7 +3,7 @@ import { LOGIN_FAILURE, LOGIN_LOADING, LOGIN_SUCCESS, LOGOUT_SUCCESS, PROFILE_FA
 let token=localStorage.getItem("token")
 
 const initialState={
-    isAuth:token ? true : false,
+    isAuth: false ,
     token:token || "",
     isLoading:false,
     isError:false,
@@ -26,13 +26,15 @@ export const reducer=(state=initialState,action)=>{
         ...state,
         isLoading:false,
         isError:false,
+        isAuth: true,
       }
     }
     case REGISTER_FAILURE:{
       return {
         ...state,
         isLoading:false,
-        isError:true
+        isError:true,
+        isAuth:true,
       }
     }
 
@@ -60,14 +62,14 @@ export const reducer=(state=initialState,action)=>{
         ...state,
         isLoading:false,
         isError:true,
-        isAuth:false,
+        isAuth:true,
         token:""
       }
     }
 
     case LOGOUT_SUCCESS:{
       return {
-       isAuth:false
+       isAuth:true
       }
     }
 

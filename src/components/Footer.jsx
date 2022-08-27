@@ -1,8 +1,10 @@
 import { Box, Stack,Text,Image,SimpleGrid } from '@chakra-ui/react'
-import React from 'react'
+import React, { useReducer } from 'react'
 import styles from "./Navbar.module.css"
 
 const Footer = () => {
+  const isAuth=useReducer((store)=>store.isAuth)
+  console.log(isAuth)
   return (
     <Stack>
     <Stack direction="row" className={styles.FooterMainBox}  >
