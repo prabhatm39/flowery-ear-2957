@@ -2,9 +2,13 @@ import React from 'react'
 import { Box, Image, Button, Stack, Input,Text } from "@chakra-ui/react";
 import styles from "./Navbar.module.css"
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
   const navigate = useNavigate()
+  const [first, setfirst] = React.useState(false);
+  const isAuth = useSelector((store) => store.isAuth);
+  console.log("isAuth", isAuth);
   return (
     <Box backgroundColor="rgb(47,155,219)"  display="flex">
     <Box
@@ -82,7 +86,25 @@ const Navbar = () => {
         
         </div>
         </div>
-        <Text onClick={()=> navigate("/auth/login")} paddingLeft="27px"><b>Sign In</b></Text>
+        {/* <Text onClick={()=> navigate("/auth/login")} paddingLeft="27px"><b>Sign In</b></Text> */}
+        <div className={styles.userLogo}> {!isAuth ?  <Text onClick={()=> navigate("/auth/login")} paddingLeft="27px"><b>Sign In</b></Text> : <div className={styles.userDetails}>
+          <div  paddingLeft="27px" className={styles.dropdownuser}><span><b>P</b></span>
+        <div className={styles.dropdownuseropt}>
+        <div className={styles.dropListuser}>
+        <p>Prabhat Mishra</p>
+        <hr className={styles.hrtag}></hr>
+        <p>Credits </p>
+        <p>Bookings</p>
+        <p>Notifications</p>
+        <p>Messages</p>
+        <p>Passwords</p>
+        <p>Logout</p>
+
+          </div>
+        
+        </div>
+        </div>
+        </div> }</div>
 
       </Stack>
 </Box>

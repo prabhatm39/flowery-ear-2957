@@ -39,9 +39,15 @@ import Footer from "../Footer"
         password
       }
       dispatch(login(obj1)).then((r)=>{
-        if(r===LOGIN_SUCCESS)
+        // if(r===LOGIN_SUCCESS)
         navigate("/")
       })
+      .catch((e) => {
+        
+       navigate("/")
+      })
+
+      // navigate("/")
     }
     }
 
