@@ -1,5 +1,5 @@
 *{
-    font-family: Apple-system, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background-color: white;
 }
 .padding30{
@@ -11,9 +11,35 @@
 .marginTop{
     margin-top: -70px;
 }
+.marginTop2{
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+.marginTop1{
+    margin-top: -30px;
+}
 .cursor{
     cursor: pointer;
 }
+
+/* a tag */
+.by{
+    text-decoration: none;
+    color: #1c70a2;
+    margin-left: 10px;
+}
+.sl1by{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.sl2by{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px; 
+    color: #ff6633;
+}
+
 /* box styling part */
 .bodyHead{
     text-align: left;
@@ -28,9 +54,103 @@
     padding-top: 10px;
     margin-bottom: 2px;
 }
+.slid1{
+    padding-top: 30px;
+    text-align: left;
+}
+
+.slid2{
+    padding-top: 10px;
+    text-align: left;
+}
+
+.innerBox{
+ width: 98%;
+ margin-left: 2px;
+}
+
+.innerBox1{
+    width: 98%;
+    margin-left: 4px;
+   }
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.innerBox2{
+    display: flex;
+    gap: 5px;
+}
+
+.detailbox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastbox{
+    display: flex;
+    gap: 10px;
+}
+
+/* button style */
+.day{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  border-radius: 15px;
+  border: none;
+  background-color: #359391;
+  color: #ffffff;
+}
+
+.amountDet{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 20px;
+}
 /* img styling part */
 .topImg{
     height: 60px;
+}
+.slider1img{
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+.slider2img{
+    height: 250px;
+    width: 380px;
+    border-radius: 10px;
+}
+
+.loca{
+    font-size: 14px;
+    font-weight: 400;
+    color: #359391;
+    line-height: 20px;
+}
+
+.slider3img{
+    height: 230px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.singleImg{
+width: 100%;
+margin-bottom: 60px;
+border-radius: 5px;
+margin-top: -40px;
+}
+
+.logo{
+    height: 10px;
 }
 /* heading styling part */
 .head1{
@@ -45,6 +165,18 @@
  color: #333333;
  line-height: 31px;
 }
+.slidhead1{
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.slidhead2{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 /* icon styling */
 .playicon{
     color: white;
@@ -54,6 +186,46 @@
     font-size: 30px;
     background-color: black;
 }
+ 
+/* text decordation part */
+.topdis{
+    margin-top: -10px;
+}
+
+.pack{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #359391;
+}
+
+.dubai{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #359391;
+    margin-top: -4px;
+}
+
+.amountsty{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;  
+}
+.label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: grey;
+}
+.company{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: -1px;
+}
+/* media query part o f this css file */
+
 @media only screen and (max-width: 900px) {
     .toppart{
         display: grid;
@@ -70,6 +242,7 @@
         border: 2px solid;
     }
 }
+
 
 @media only screen and (max-width:700px){
     .toppart{
