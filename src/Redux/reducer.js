@@ -6,6 +6,7 @@ const initialState = {
     mind: [],
     domestic: [],
     international: [],
+    singleData: {},
     isLoading: false,
     isError: false,
 };
@@ -59,49 +60,70 @@ const reducer = (state = initialState, action) => {
             };
 
         case types.REQUEST_PACKAGE_DATA_DOMESTIC:
-            return{
+            return {
                 ...state,
                 isLoading: true,
                 isError: false,
             };
-        
+
         case types.SUCCESS_PACKAGE_DATA_DOMESTIC:
-            return{
+            return {
                 ...state,
                 domestic: payload,
                 isError: false,
                 isLoading: false,
             }
-        
+
         case types.FAILURE_PACKAGE_DATA_DOMESTIC:
-            return{
+            return {
                 ...state,
                 isLoading: false,
                 isError: true,
             }
 
-            case types.REQUEST_PACKAGE_DATA_INTERNATIONAL:
-                return{
-                    ...state,
-                    isLoading: true,
-                    isError: false,
-                };
-            
-            case types.SUCCESS_PACKAGE_DATA_INTERNATIONAL:
-                return{
-                    ...state,
-                    international: payload,
-                    isError: false,
-                    isLoading: false,
-                }
-            
-            case types.FAILURE_PACKAGE_DATA_INTERNATIONAL:
-                return{
-                    ...state,
-                    isLoading: false,
-                    isError: true,
-                }
+        case types.REQUEST_PACKAGE_DATA_INTERNATIONAL:
+            return {
+                ...state,
+                isLoading: true,
+                isError: false,
+            };
 
+        case types.SUCCESS_PACKAGE_DATA_INTERNATIONAL:
+            return {
+                ...state,
+                international: payload,
+                isError: false,
+                isLoading: false,
+            }
+
+        case types.FAILURE_PACKAGE_DATA_INTERNATIONAL:
+            return {
+                ...state,
+                isLoading: false,
+                isError: true,
+            }
+
+        case types.ERROR_SINGLE_PACKAGE_DATA: 
+        return{
+            ...state,
+            isLoading: true,
+            isError: false,
+        }
+
+        case types.SUCCESS_SINGLE_PACKAGE_DATA:
+            return{
+                ...state,
+                singleData: payload,
+                isLoading: false,
+                isError: false,
+            }
+
+        case types.ERROR_SINGLE_PACKAGE_DATA: 
+            return{
+                ...state,
+                isLoading: false,
+                isError: true,
+            }
 
         default: {
             return state;

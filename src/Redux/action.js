@@ -50,4 +50,16 @@ const getInternationalData = () => (dispatch) => {
     });
 }
 
-export {getPackageData , getMindData , getDomesticData, getInternationalData };
+const getSinglePackageData = (id) => (dispatch) => {
+    dispatch({type: types.GET_SINGLE_PACKAGE_DATA});
+    return axios
+    .get(`${"http://localhost:8080/user"}/${id}`)
+    .then((r) => {
+        dispatch({type: types.SUCCESS_SINGLE_PACKAGE_DATA, payload: r.data});
+    })
+    .catch((e) => {
+        dispatch({type: types.ERROR_SINGLE_PACKAGE_DATA});
+    })
+}
+
+export {getPackageData , getMindData , getDomesticData, getInternationalData , getSinglePackageData};

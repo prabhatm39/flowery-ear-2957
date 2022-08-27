@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "./FetchData.module.css";
+import {Link} from "react-router-dom";
 
 const CompleteData = ({suggestions}) => {
     console.log(suggestions);
@@ -11,9 +12,11 @@ const CompleteData = ({suggestions}) => {
                         suggestions.map((item) => {
                             return <div className={styles.fetchTopRe}>
                             <h2 className={styles.heading}>{item.location} Packages</h2>
+                            <Link to={`/packages/${item.id}`}>
                                 <div>
                                     <img className={styles.fetchImage} src={item.banner} />
                                 </div>
+                            </Link>
                                 <p className={styles.packa}>PACKAGE</p>
                                 <h3>{item.descTitle}</h3>
                                 <div className={styles.location}>
