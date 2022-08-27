@@ -15,12 +15,13 @@ const DetailsPin = () => {
             inputRef.current[index+1].focus();
         }
         inputData[index] = e.target.value
-        console.log(inputData);
+        // console.log(inputData);
         setOtp(inputData.join(""));
 
         if(inputData.join("") === "1234") {
             console.log("Hy");
-            //here we can give navigate
+            //here we can give navigate 
+            alert("succesfull login")
         }
     }
 

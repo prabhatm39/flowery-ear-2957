@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
     FormControl,
     Input,
-    Button,
   } from '@chakra-ui/react';
 import './HomePageDetails.css'
 import DetailsPageModal from './DetailsPageModal';
@@ -36,7 +35,7 @@ const DetailsRigthSide = () => {
   return (
     <div style={{marginTop:'1rem'}}> 
       <div className="left_siderbar_form">
-      <h3>Want to book a similar trip?</h3>
+      <h3 style={{fontWeight:'bold'}}>Want to book a similar trip?</h3>
       <FormControl className="form" >
             <Input type="email" 
             placeholder="Email"
@@ -66,7 +65,7 @@ const DetailsRigthSide = () => {
                 <h4 style={{textAlign:'left'}}>Flights Booked?</h4>
 
                 <div className="radio_class">
-                  <input type="radio" /> <label>Yes </label>
+                  <input type="radio"  /> <label>Yes </label>
                 </div>
                <div className="radio_class">
                 <input type="radio"/> <label> No </label>
@@ -74,11 +73,8 @@ const DetailsRigthSide = () => {
                
             </div>
 
-            <div className="RequstCallbakc_button">
-                {/* <Button className="RequstCallbakc_button" onClick={handleRequestCallback}> */}
-                     <DetailsPageModal />
-                {/* </Button> */}
-                {/* <div><DetailsPageModal /></div>          */}
+            <div>
+                     <DetailsPageModal />  
                 <p style={{fontSize:'10px'}}>I accept the Terms of Use and Privacy Policy of Tripoto.</p>
             </div>
       </FormControl>
