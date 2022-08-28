@@ -1,0 +1,39 @@
+.buttonFacebook{
+    width: 250px;
+    background-color:#4A66A0;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  .buttonGoogle{
+    width: 250px;
+    background-color: white;
+    border: 0.5px solid grey;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  .buttonLogin{
+    width: 250px;
+    background-color:#F27669;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  
+  .input{
+    border: 0.5px solid grey;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 10px;
+  
+  }
+  .title{
+    font-size: 45px;
+    padding-bottom: 20px;
+  }
+  .bottomLine> a {
+    text-decoration: none;
+    color: #5846f6 !important;
+    text-decoration: underline;
+    font-size: 20px;
+  }

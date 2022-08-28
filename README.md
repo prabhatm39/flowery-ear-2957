@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Clone of Tripoto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a collaborative Project from Masai School in the Construct Week. We are 5 members of the team:
 
-## Available Scripts
+<b>1. Prabhat Mishra : Team Lead</b>
 
-In the project directory, you can run:
+<b>2. Harsha C</b>
 
-### `npm start`
+<b>3. Umesh Yadav</b>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<b>4. Raviranjan Kumar</b>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<b>4. Pankaj Singh Sajwan</b>
 
-### `npm test`
+Firstly let’s know about Tripto. Tripoto is a travel Booking website, for providing end to end solution to to your travelling by making your bookings handy.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges and hardships we faced:
 
-### `npm run build`
+During the project, we divided our work among ourselves and we played our part very well.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech & Tools Used :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+These are the technologies used in this project which are available below:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Tripoto (Original Website)
+#### Chakra UI (UI Styling Library)
+#### For Frontend : HTML5, CSS3, Javascript, JS6, ReactJS
+#### For database: Local storage
+#### For authentication: Masai Api Mocker
 
-### `npm run eject`
+# Functionalities we made:
+## Landing Page :
+The landing page consists of various templates for video making. Users can hover on the given template video and preview it. Users can see filtration according to the type of video template.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Register and Login :
+On the register page, the user can register by giving common details like First Name, Work Email, Mobile Number, and Password.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If the user is already registered, the user can log in with an Email & Password.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After signup and login successful user is navigated to the dashboard.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dashboard:
+On the dashboard, the user can see all the travel destinations .
 
-## Learn More
+After proceeding further user is navigated to selected page where he can select his intrest travel destination to get more information of it.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Visit Dubai :
+On the page, you can see all information related to Dubai to make plan your trip.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In this Page you will be able to explore all the tourist destinations in the video formats along with modal videos.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Notes :
+All the images and links are used from the original website to get a better experience of the website. I have also included the Github link of our project for your reference.
 
-### Analyzing the Bundle Size
+NetlifyLink :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+I would say, thank you for reading this here. I hope you will find it helpful. I and my teammates completed this project with full enthusiasm, focus, and hard work. It may have some bugs, but we will try to fix them soon.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+It was not an easy task to implement the new concepts on the first attempt. I would also thank my team members to make this project successful. Feel free to reach out to us for any feedback.

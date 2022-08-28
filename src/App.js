@@ -1,14 +1,20 @@
+import logo from './logo.svg';
 import './App.css';
-import MainRoutes from './MainRoutes/MainRoutes';
-
+import Navbar from './Components/Navbar/Navbar';
+import MainRoute from './MainRoute/MainRoute';
+import Footer from './Components/Footer/Footer';
 
 function App() {
-  
-
   return (
     <div className="App">
-      
-       <MainRoutes />
+   <Navbar />
+     <MainRoute />
+     <br/>
+     <br/>
+     <div style={{marginTop:"2rem"}}>
+                          <hr/>
+                        </div>
+     <Footer /> 
     </div>
   );
 }

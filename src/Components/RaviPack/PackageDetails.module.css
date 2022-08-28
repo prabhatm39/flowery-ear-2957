@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.PackageDetailsMain{
+    width: 86%;
+    /* border: 2px solid black; */
+    margin: 50px auto ;
+    display: flex;
+    gap: 30px;
+}
+.PackageDetailsMain > div{
+    border: 1px solid black;
+}
+
+.PackageDetailsLeft{
+    width: 70%;
+    /* border: 1px solid black; */
+}
+
+PackageDetailsRight{
+    width: 25%;
+    border: 2px solid black;
+} 
+.PackageDetailsImg{
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+}
+.number{
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(153, 148, 148);
+    display: flex;
+    margin: 20px;
+    gap: 60px;
+}
+.PackageDetailsh2{
+    margin: 10px 10px 10px 20px;
+    font-size: 22px;
+}
+/* .number > div{
+     border: 1px solid black; 
+} */
+.numberLeft{
+    width: 70%;
+    display: flex;
+    gap: 10px;
+}
+.numberLeftImg{
+    border-radius: 50%;
+    width: 35px; 
+    height: 25px;
+}
+.numberRighth2{
+    color: red;
+}
+.days{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 15px;
+    margin: 10px 10px 10px 20px;
+
+}
+.daysh2{
+    border: 1px solid black;
+    width: 12%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #359391;
+    color: white;
+    padding: 5px;
+
+}
+.daysh2 > h3{
+text-align: center;
+}
+/* .days > div{
+    border: 1px solid black;
+} */
+.daysLeft{
+    width: 80%;
+}
+.daysRight{ 
+    display: flex;
+}
+.PackageDetailsLocation{
+    margin: 10px 10px 10px 20px;
+}
+.PackageDetailsLocationh2{
+    color: #465975;
+}
+.packageHighlights{
+    margin: 10px 10px 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.packageHighlights > div{
+    margin-bottom: 10px;
+}
+.packageHighlights > div > h4{
+    font-size: 17px;
+}
+.PackageDetailsRight{
+    width: 30%;
+    height: 500px;
+
+    position: fixed;
+    right: 1.5rem;
+    /* position: relative; */
+    /* scroll-behavior: fixed; */
+    /* margin: auto; */
+}
+.inputDiv{
+    /* border: 2px solid black; */
+    width: 90%;
+    margin: auto;
+    margin: 20px;
+}
+.inputDiv > input {
+    border: 2px solid black;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    height: 30px;
+    /* margin-bottom: 20px; */
+}
+.button{
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    font-size: bold;
+    text-align: center;
+    background-color: #78bee8;
+    margin: auto;
+}
+.inputDiv > p{
+    font-size: bold;
+    font-size: 18px;
+}
