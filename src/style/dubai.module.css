@@ -225,7 +225,7 @@ margin-top: -40px;
     margin-top: -1px;
 }
 /* media query part o f this css file */
-
+/* 
 @media only screen and (max-width: 900px) {
     .toppart{
         display: grid;
@@ -253,4 +253,4 @@ margin-top: -40px;
     .topImg{
         height: 80px;
     }
-}
+} */
