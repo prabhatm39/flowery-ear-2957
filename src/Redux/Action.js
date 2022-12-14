@@ -62,8 +62,7 @@ const getSinglePackageData = (id) => (dispatch) => {
     })
 }
 
-import * as types from "./actionType"
-import axios from 'axios'
+
 const getData1 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST})
     return axios
